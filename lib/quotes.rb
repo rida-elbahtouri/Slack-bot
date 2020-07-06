@@ -1,4 +1,3 @@
-
 require 'slack-ruby-bot'
 require 'json'
 require 'httparty'

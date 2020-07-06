@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'slack-ruby-bot'
 require_relative './quotes.rb'
 module RidaBot

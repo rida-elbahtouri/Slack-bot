@@ -1,13 +1,11 @@
-# frozen_string_literal: true
-
 require 'slack-ruby-bot'
 require 'json'
 require 'httparty'
 require 'dotenv'
 module RidaBot
   class Weather < SlackRubyBot::Commands::Base
-    command 'can you tell me the weather in' do |client, data, _match|
-      q = _match[:expression].delete! '?'
+    command 'can you tell me the weather in' do |client, data, match|
+      q = match[:expression].delete! '?'
       q.delete! ' ' if q.include? ' '
       key = Dotenv.load['weather_api']
       response = HTTParty.get("http://api.openweathermap.org/data/2.5/weather?q=#{q}&&APPID=#{key}")

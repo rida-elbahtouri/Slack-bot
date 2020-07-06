@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'slack-ruby-bot'
 require_relative '../lib/weather.rb'
 require_relative '../lib/say_hi.rb'
