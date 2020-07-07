@@ -1,6 +1,6 @@
 ### Slack-bot
 
-This project we add new methods onto the existing Enumerable module. Ruby makes this easy for you because any class or module can be added to without trouble .
+this bot will welcome you and tell you about the weather and also give you some inspirational quotes
 
 
 
