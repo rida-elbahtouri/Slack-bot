@@ -47,6 +47,7 @@ $ cd Slack-bot
 
 **Create a .env file**
 - add your slack bot and openweather tokens
+
   SLACK_API_TOKEN = your slack bot token
   
   weather_api = your oprnweathermap token
