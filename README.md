@@ -63,7 +63,9 @@ $ bundle install
 $ rackup
 
 ```
+**How to use the bot**
 
+[loom video](https://www.loom.com/share/af1e83f0000447df8eb68815ae0eba5b)
 ### Auther
 👤 **Rida Elbahtouri**
 
