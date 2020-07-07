@@ -17,7 +17,7 @@ This project we add new methods onto the existing Enumerable module. Ruby makes 
 
 ### Getting Started
  **First create a new bot on slack**
- [Create Bot](https://ridaruby.slack.com/apps/new)
+ [Create Bot](https://slack.com/services/new/bot)
 - Give your Bot a username
 ![Screenshot](images/Screenshot.png)
 - Click on add Bot integration
