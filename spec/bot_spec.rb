@@ -1,5 +1,5 @@
 require_relative '../bin/bot.rb'
-require_relative 'spec_helper.rb'
+
 
 RSpec.describe 'Ridabot' do
   it 'Hints help', :vcr do

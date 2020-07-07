@@ -1,3 +1,4 @@
+require 'slack-ruby-bot/rspec'
 require 'vcr'
 require 'webmock'
 require_relative '../bin/bot.rb'
