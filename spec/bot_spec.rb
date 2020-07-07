@@ -1,6 +1,4 @@
 require_relative '../bin/bot.rb'
-
-
 RSpec.describe 'Ridabot' do
   it 'Hints help', :vcr do
     expect(
