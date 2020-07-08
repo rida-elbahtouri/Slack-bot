@@ -4,7 +4,7 @@ module RidaBot
   class SayHi < SlackRubyBot::Commands::Base
     class Quote < Quotes
       def generate_quote
-        "the quote chosen for you is :\n#{@@res[@@i]['text']} \n by #{@@res[@@i]['author']} "
+        "the quote chosen for you is :\n#{quote_api['text']} \n by #{quote_api['author']} "
       end
     end
     command 'hello there' do |client, data, _match|

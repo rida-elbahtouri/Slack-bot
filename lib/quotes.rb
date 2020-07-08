@@ -2,20 +2,18 @@ require 'slack-ruby-bot'
 require 'json'
 require 'httparty'
 require 'open-uri'
-
-# rubocop:disable Style/ClassVars
 module RidaBot
   class Quotes < SlackRubyBot::Commands::Base
-    attr_reader :res, :i
-    response = HTTParty.get('https://type.fit/api/quotes')
-    res = JSON.parse(response)
-    i = rand(1..(res.length - 1))
-    @@i = i
-    @@res = res
+    def quote_api
+      response = HTTParty.get('https://type.fit/api/quotes')
+      res = JSON.parse(response)
+      i = rand(1..(res.length - 1))
+      res[i]
+    end
     command 'can you give me a random quote?' do |client, data, _match|
+      qu = new
       client.web_client.chat_postMessage(channel: data.channel, text: "
-        your random quote will be :\n#{res[i]['text']} \n by #{res[i]['author']} ")
+        your random quote will be :\n#{qu.quote_api['text']} \n by #{qu.quote_api['author']} ")
     end
   end
 end
-# rubocop:enable Style/ClassVars
