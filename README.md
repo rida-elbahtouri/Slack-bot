@@ -1,6 +1,6 @@
 ### Slack-bot
 
-This project we add new methods onto the existing Enumerable module. Ruby makes this easy for you because any class or module can be added to without trouble .
+this bot will welcome you and tell you about the weather and also give you some inspirational quotes
 
 
 
@@ -17,7 +17,7 @@ This project we add new methods onto the existing Enumerable module. Ruby makes 
 
 ### Getting Started
  **First create a new bot on slack**
- [Create Bot](https://ridaruby.slack.com/apps/new)
+ [Create Bot](https://slack.com/services/new/bot)
 - Give your Bot a username
 ![Screenshot](images/Screenshot.png)
 - Click on add Bot integration
@@ -47,7 +47,9 @@ $ cd Slack-bot
 
 **Create a .env file**
 - add your slack bot and openweather tokens
+
   SLACK_API_TOKEN = your slack bot token
+  
   weather_api = your oprnweathermap token
 
 **Install the gems from Gemfile**
@@ -63,7 +65,9 @@ $ bundle install
 $ rackup
 
 ```
+**How to use the bot**
 
+[loom video](https://www.loom.com/share/af1e83f0000447df8eb68815ae0eba5b)
 ### Auther
 👤 **Rida Elbahtouri**
 
