@@ -7,7 +7,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     celluloid (0.17.4)
       celluloid-essentials
@@ -54,7 +54,7 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     nio4r (2.5.2)
-    public_suffix (4.0.5)
+    public_suffix (4.0.6)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
